@@ -1,0 +1,515 @@
+/*Color Palette:
+#4b3b40 - Old Burgandy
+#969a97 - Spanish Gray
+#d6d1cd - Timberwolf
+#e5ece9 - Mint Cream
+#e85d74 - Brink Pink*/
+
+/*universal styles*/
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #d6d1cd;
+    font-family: "Fira Sans", sans-serif;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+/*Nav*/
+#nav {
+    background-color: #4b3b40;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    height: 3.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+#nav a {
+    text-decoration: none;
+    color: #e5ece9;
+}
+
+#nav a:hover {
+    font-style: italic;
+}
+
+#nav li {
+    display: inline;
+    margin-right: 1.75rem;
+    font-size: 1.75rem;
+}
+
+#nav h1 {
+    color: #e5ece9;
+    margin-left: 1.75rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 820px) {
+    #nav li, #nav h1 {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    #nav h1 {
+        display: none;
+    }
+
+    #nav ul {
+        width: 100%;
+    }
+}
+
+/*Banner*/
+#banner {
+    width: 100%;
+    background-image: url(./Resources/Images/jefferson-santos-fCEJGBzAkrU-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+}
+
+#banner h1 {
+    font-family: "La Belle Aurore", cursive;
+    color: #e5ece9;
+    text-shadow: 1px 1px black;
+    font-size: 4rem;
+    padding-top: 2rem;
+    margin-bottom: 0;
+}
+
+#banner h2 {
+    font-family: "La Belle Aurore", cursive;
+    color: #e5ece9;
+    text-shadow: 1px 1px black;
+    font-size: 3rem;
+    margin-top: 0;
+    padding-bottom: 2rem;
+}
+/*About*/
+#about {
+    width: 100%;
+    background-color: #4b3b40;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    justify-items: center;
+    
+}
+
+#about h2 {
+    font-family: "La Belle Aurore", cursive;
+    color: #e5ece9;
+    text-shadow: 1px 1px black;
+    font-size: 2.5rem;
+    padding-top: 2%;
+    width: 100%;
+}
+
+#about p {
+    color: #e5ece9;
+    font-size: 1.125rem;
+    line-height: 2;
+}
+
+.about_txt {
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 5%;
+}
+
+@media only screen and (max-width: 760px) {
+    .about_txt {
+        width: 85%;
+    }
+}
+
+/*quotes*/
+#reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 2%;
+}
+
+#reviews h2 {
+    font-family: "La Belle Aurore", cursive;
+    font-size: 2.5rem;
+    padding-top: 2%;
+    width: 100%;
+    padding-bottom: 2%;
+}
+
+#reviews .review_container {
+    width: 30%;
+}
+
+#reviews .review_container h3 {
+    font-size: 1.75rem;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+#reviews .review_container p {
+    line-height: 1.5;
+    padding: 2% 3%;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 760px) {
+    #reviews .review_container {
+        width: 40%;
+        margin-bottom: 8%;
+    }   
+
+    #reviews .review_container h3 {
+        padding-bottom: 3%;
+    }
+
+    #reviews .review_container p {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #reviews .review_container {
+        width: 70%;
+    }
+
+    #reviews h2 {
+        width: 70%;
+        margin-bottom: 5%;
+    }
+}
+/*Events*/
+#events h2 {
+    font-family: "La Belle Aurore", cursive;
+    font-size: 2.5rem;
+    padding-top: 2%;
+    width: 100%;
+    padding-bottom: 2%;
+}
+
+.event_type {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.event_type h3 {
+    font-family: "La Belle Aurore", cursive;
+    font-size: 2rem;
+    padding-top: 2%;
+    width: 100%;
+    padding-bottom: 2%;
+}
+
+#weekly .event_container {
+    width: 20%;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #e5ece9;
+    text-shadow: 1px 1px black;
+}
+
+#weekly .event_container h4 {
+    font-family: "La Belle Aurore", cursive;
+    font-size: 2rem;
+    padding-top: 2%;
+    width: 100%;
+    padding-bottom: 0;
+}
+
+#weekly .event_container .place {
+    font-family: "La Belle Aurore", cursive;
+    font-size: 1.5rem;
+    padding: 0 2% 5% 2%;
+    margin-top: 0;
+}
+
+#weekly .event_container strong {
+    font-weight: bold;
+}
+
+#weekly .event_container p {
+    width: 90%;
+    padding: 0 2% 10% 2%;
+}
+
+#monday {
+    background-image: url("./Resources/Images/bar_stage1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+}
+
+#tuesday {
+    background-image: url("./Resources/Images/open_stage1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+}
+
+#thursday {
+    background-image: url("./Resources/Images/open_mic3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+}
+
+#sunday {
+    background-image: url("./Resources/Images/jam_session1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+}
+
+#monthly .event_container {
+    width: 35%;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #e5ece9;
+    text-shadow: 1px 1px black;
+    align-items: center;
+}
+
+#monthly .event_container h4 {
+    font-family: "La Belle Aurore", cursive;
+    font-size: 2.125rem;
+    padding-top: 2%;
+    width: 100%;
+    padding-bottom: 0;
+}
+
+#monthly .event_container .place {
+    font-family: "La Belle Aurore", cursive;
+    font-size: 1.875rem;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+#monthly .event_container .tag {
+    padding: 5% 2%;
+}
+
+#showcase {
+    background-image: url("./Resources/Images/show1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+
+#rising {
+    background-image: url("./Resources/Images/show2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+
+#other .event_container {
+    width: 30%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#other span {
+    width: 100%;
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    font-size: 1.25rem;
+    padding-bottom: 5%;
+}
+
+#other .img_container {
+    width: 90%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 5px
+}
+
+#other .event_container h4 {
+    font-family: "La Belle Aurore", cursive;
+    font-size: 2.125rem;
+    padding-top: 2%;
+    width: 100%;
+    padding-bottom: 0;
+}
+
+#other .event_container .place {
+    font-family: "La Belle Aurore", cursive;
+    font-size: 1.875rem;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 760px) {
+    #weekly {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: stretch;
+    }
+    
+    #weekly .event_container {
+        width: 45%;
+        margin-bottom: 4%;
+    }
+
+    #monthly .event_container {
+        width: 45%;
+        margin-bottom: 4%;
+    }
+
+    #other .event_container {
+        width: 45%;
+        margin-bottom: 4%;
+    }
+
+    #other .event_container .place {
+        font-size: 1.375rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #events span {
+        width: 70%;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media only screen and (max-width: 716px) {
+    #other .event_container .place {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    #monthly .event_container, #weekly .event_container, #other .event_container {
+        width: 70%;
+    }
+
+    #other .event_container .place {
+        font-size: 1.5rem;
+    }
+}
+
+/*Media*/
+#media_all {
+    padding-bottom: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 5%;
+}
+
+#media h2 {
+    font-family: "La Belle Aurore", cursive;
+    font-size: 2.5rem;
+    padding-top: 2%;
+    width: 100%;
+    padding-bottom: 2%;
+}
+
+.media_container {
+    width: 30%;
+
+
+}
+
+.media_container h3 {
+    font-family: "La Belle Aurore", cursive;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 2%;
+    width: 100%;
+    padding-bottom: 2%;
+}
+
+.video {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 1058px) {
+    .media_container {
+        width: 45%;
+    }
+
+    .media_container h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 538px) {
+    .media_container h3 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .media_container {
+        width: 70%;
+    }
+
+    .media_container h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/*Footer*/
+#foot {
+    background-color: #4b3b40;
+    display: flex;
+    color: #e5ece9;
+    font-size: 0.875rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5%;
+    width: 100%;
+    
+}
+
+#foot #contact {
+    margin-right: 2%;
+}
+
+@media only screen and (max-width: 400px) {
+    #foot #name {
+        display: none;
+    }
+
+    #foot #contact {
+        float: right;
+    }
+}
